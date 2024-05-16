@@ -1,0 +1,152 @@
+{
+"roman":{
+    "nav":"romans",
+    "div1":{
+
+        "titre":"littérature",
+        "ul0":["Théatre","Literrature française","Poésie"],
+        "ul1":["Livres de références","Littérature anglaise","Romans historiques"],
+        "ul2":["humour","récits de voyages","Littérature italienne","text"]
+
+    },
+    "div2":{
+
+        "titre":"Romams policiers et polars",
+        "ul0":["Romans policiers","Thriller"],
+        "ul1":["Romans noirs","Polars historiques"]
+       
+        
+
+    }
+
+        
+    
+
+},
+
+"jeunesse":{
+    "nav":"jeunesse",
+    "div1":{
+
+        "titre":"Livres pour enfants",
+        "ul0":["Eveil","Héros","Compte et légendes"],
+        "ul1":["Album","Jeux","Chansons"],
+        "ul2":["Fiction","Découvertes","Encyclopédies"]
+
+    },
+    "div2":{
+
+        "titre":"Adolescents",
+        "ul0":["Romans","Sport,art,crétaion",""],
+        "ul1":["Savoir et découvertes","Comptes et légendes"]
+        
+
+    }
+
+
+},
+"arts":{
+    "nav":"arts",
+    "div1":{
+
+        "titre":"Art,musique,cinéma",
+        "ul0":["Histoire de l'art","Peinture","Technique d'art"],
+        "ul1":["Music","Danse","Photos"],
+        "ul2":["Architecture","Design","Théatre"]
+
+    },
+    "div2":{
+
+        "titre":"Histoire",
+        "ul0":["France","Europe","Monde"],
+        "ul1":["Grande périodes de l'histoire","Bio","Archéologie"],
+        "ul2":["Atlas historique"]
+
+    }
+
+},
+"societe":{
+    "nav":"societe",
+    "div1":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    },
+    "div2":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    }
+
+},
+"bd":{
+    "nav":"bd",
+    "div1":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    },
+    "div2":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    }
+
+},
+"losirs":{
+    "nav":"loisirs",
+    "div1":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    },
+    "div2":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    }
+
+},
+"viePratique":{
+    "nav":"vie pratique",
+    "div1":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    },
+    "div2":{
+
+        "titre":"",
+        "ul0":["","",""],
+        "ul1":["","",""],
+        "ul2":["","",""]
+
+    }
+
+}
+
+
+
+
+}
