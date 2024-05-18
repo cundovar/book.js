@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import UseFetch from "../../utils/useFech";
 import SousCategorieDiv from "./sousCategorieDiv";
+import {ButtonGreen, ButtonOrange} from "../common/buttons";
 
 const MainNav = () => {
     const jsonUrl = "/json/jsonNav.json";
@@ -15,6 +16,9 @@ const MainNav = () => {
          console.log("erreur",errorNav)
      }
      const categories = dataNav ? Object.keys(dataNav) : [];
+     const dataLi=[
+        "Aide","recyclage Pro","Nos engagements","Le blog"
+     ]
    
 
      
@@ -25,8 +29,8 @@ const MainNav = () => {
 
     return (
         <>
-        <div className="fixed top-0 w-full items-center justify-center flex h-20 space-x-10 border">
-            <div>logo</div>
+        <div className="fixed top-0 w-full items-center justify-center flex z-50 bg-slate-50 h-20 space-x-10 border">
+            <div className="svg">logo</div>
             <div>qui somme nous ?</div>
             <div>donner ou revendre des livres</div>
             <div>barre de recherche</div>
@@ -37,11 +41,14 @@ const MainNav = () => {
             </div>
         </div>
         
-        <div className="w-full bg-gray-400 h-full  ">
+        <div className="w-full bg-gray-00 h-full  ">
 
         <div className={`w-full mt-20 z-5 flex h-full fixed left-0 border ${ishover ? "z-50":""} `}>
-            <div className="w-3/12 ">
+            <div className="w-2/12 overflow-y-scroll custom-scrollbar ">
                 <ul>
+                <li  className="border p-3 cursor-pointer hover:border-l-orange-600 text-pink-400 font-bold">Nouvreau chez mous</li>
+                <li  className="border p-3 cursor-pointer hover:border-l-orange-600 text-orange-600 font-bold">Promation</li>
+
                     {categories.map((category, idx) => (
                         <li
                             key={idx}
@@ -49,6 +56,17 @@ const MainNav = () => {
                             onMouseEnter={() => handleMouseEnter(category)}
                         >
                              {dataNav[category].nav}
+                        </li>
+                    ))}
+                    <li className="border p-3 cursor-pointer relative" >
+                       <ButtonOrange text="carte cadeau"/>
+                    </li>
+                    <li className="border p-3 cursor-pointer " >
+                        <ButtonGreen text="Donner ou revendre"/>
+                    </li>
+                    {dataLi.map((item)=>(
+                        <li  className="border p-3 cursor-pointer hover:border-l-orange-600">
+                            {item}
                         </li>
                     ))}
                 </ul>
@@ -77,7 +95,7 @@ const MainNav = () => {
     </>
 )}
             </div>
-            <div className={`w-2/12 h-full bg-black opacity-40  ${ishover ? '' : 'z-0 hidden'}`}>
+            <div className={`w-3/12 h-full bg-black opacity-40  ${ishover ? '' : 'z-0 hidden'}`}>
 
             </div>
         </div>

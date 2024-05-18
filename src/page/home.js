@@ -11,7 +11,7 @@ const Home=()=>{
 
 
     return(
-        <main className="w-9/12 mt-20 absolute right-0 bg-red-600 h-full z-40">
+        <main className="w-10/12 p-1 mt-20 absolute right-0  h-full z-40">
 <Carousel1/>
 <Livre/>
 <Bandeau/>

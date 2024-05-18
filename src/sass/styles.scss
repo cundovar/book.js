@@ -1,0 +1,46 @@
+@import './backCouleur.scss';
+
+.buttonHover {
+    position: relative;
+    display: inline-block; // Ajouté pour que le pseudo-élément couvre le bouton correctement
+  
+    &::after {
+      content: ''; /* Crée un pseudo-élément vide */
+      position: absolute; /* Permet au pseudo-élément de se superposer au bouton */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 0 solid; // Bordure sans couleur, à définir dans les variantes
+      transition: border-width 0.1s; /* Transition douce pour la bordure */
+      border-radius: 10px;
+    }
+  
+    &:hover::after {
+      border-width: 3px;
+    }
+  
+    &.orange::after {
+      border-color: rgb(249, 116, 43);
+    }
+  
+    &.green::after {
+      border-color:  rgb(132, 184, 155);
+    }
+  }
+
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Masquer la barre de défilement pour Firefox */
+  .custom-scrollbar {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Masquer la barre de défilement pour IE et Edge */
+  .custom-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+  }
