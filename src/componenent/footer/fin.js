@@ -1,4 +1,5 @@
 import React from "react";
+import ContentArticleFooter from "./composant/contentList";
 
 
 
@@ -14,8 +15,8 @@ const Fin=()=>{
 
     return(
 
-        <div className="flex space-x-5 h-96 footer_back3  z-50 items-center justify-center">
-        {items.map((item)=>(
+        <div className="flex space-x-5 h-96 footer_back3  z-50 items-start  justify-center">
+        {/* {items.map((item)=>(
 
            <article className=" border-l w-1/4">
              <h4 className="text-2xl">{item[0]}</h4>
@@ -24,9 +25,15 @@ const Fin=()=>{
               <li key={index}>{element}</li>
             ))}
              </ul>
-           </article>
+           </article> */}
 
-        ))}
+        {/* ))} */}
+
+        {items.map((item, index) => (
+  <ContentArticleFooter key={index} item0={item[0]} item={item} />
+))}
+
+
         </div>
     )
 }

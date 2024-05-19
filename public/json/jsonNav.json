@@ -69,18 +69,18 @@
     "nav":"societe",
     "div1":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Actu,polirique,société",
+        "ul0":["document d'actualité"],
+        "ul1":["Grand theme"],
+        "ul2":["Grands conflit et géaopilique"]
 
     },
     "div2":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Religiion et spiritualté",
+        "ul0":["Bouddisme","Islam","Catho"],
+        "ul1":["Théologie","Musticisme","Religion et science"],
+        "ul2":["Bible","Dictionnaire","histoires de religion","ect"]
 
     }
 
@@ -89,18 +89,18 @@
     "nav":"bd",
     "div1":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Bande dessinées",
+        "ul0":["Jeunesse","Ouvrages de références","Humour"],
+        "ul1":["Roman graphique","Policier suspense","Heroic fantasy"],
+        "ul2":["Comics","SF","Fanstastique","ect"]
 
     },
     "div2":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Manga",
+        "ul0":["Shôjo manga","Fantastique","Manhwa"],
+        "ul1":["Sf et terreur","Histoire","Litérature"],
+        "ul2":["Combats","Heroic-fantasy","Erotisme","ect"]
 
     }
 
@@ -109,18 +109,18 @@
     "nav":"loisirs",
     "div1":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Tourisme voyage",
+        "ul0":["Guide touristique","Guide du randonneur"],
+        "ul1":["Régions","Carte et plans"]
+        
 
     },
     "div2":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Loisir créatif,décoration,bricolage",
+        "ul0":["Maison et jardin"],
+        "ul1":["Loisirs créatif,jeux et activités"]
+     
 
     }
 
@@ -129,16 +129,16 @@
     "nav":"vie pratique",
     "div1":{
 
-        "titre":"",
-        "ul0":["","",""],
-        "ul1":["","",""],
-        "ul2":["","",""]
+        "titre":"Informatique et internet",
+        "ul0":["programme et language","Internet","entreprise"],
+        "ul1":["Multimédia et graphisme","Matériel","Système d'exploitation"],
+        "ul2":["Jeux","Bureautique","Application","zct"]
 
     },
     "div2":{
 
-        "titre":"",
-        "ul0":["","",""],
+        "titre":"Dictionnaire,Langue,Encyclopédie",
+        "ul0":["Langues étrangères","Encyclopédie","Langue française"],
         "ul1":["","",""],
         "ul2":["","",""]
 

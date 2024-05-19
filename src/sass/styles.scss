@@ -67,3 +67,15 @@
   .custom-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
   }
+
+  .arrow {
+    position: relative;
+  
+    .arrow1 {
+      transition: margin-left 0.3s ease;
+    }
+  
+    &:hover .arrow1 {
+      margin-left: 0.5rem;
+    }
+  }

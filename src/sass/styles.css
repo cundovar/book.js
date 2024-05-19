@@ -11,6 +11,18 @@
   background-color: hsl(240, 27%, 98%);
 }
 
+.back_sous_menu {
+  background-color: #FFFFFF;
+}
+
+.back_navbar {
+  background-color: #f8f8fb;
+}
+
+.cardLivre {
+  background-color: rgb(248, 248, 251);
+}
+
 .buttonHover {
   position: relative;
   display: inline-block;
@@ -65,6 +77,16 @@
 /* Masquer la barre de défilement pour IE et Edge */
 .custom-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
+}
+
+.arrow {
+  position: relative;
+}
+.arrow .arrow1 {
+  transition: margin-left 0.3s ease;
+}
+.arrow:hover .arrow1 {
+  margin-left: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

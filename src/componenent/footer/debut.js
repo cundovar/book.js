@@ -1,5 +1,6 @@
 import React from "react";
 import Milieu from "./milieu";
+import ContentArticleFooter from "./composant/contentList";
 
 
 
@@ -15,19 +16,14 @@ const Debut=()=>{
 
     return(
 
-        <div className="flex  h-96 space-x-5 footer_back1 items-center relative justify-center">
-        {items.map((item)=>(
+        <div className="flex  h-96 space-x-5 footer_back1 items-start relative justify-center">
+       
 
-           <article className="w-1/4">
-             <h4 className="text-2xl">{item[0]}</h4>
-             <ul>
-             {item.slice(1).map((element, index) => (
-              <li key={index}>{element}</li>
-            ))}
-             </ul>
-           </article>
+{items.map((item, index) => (
+  <ContentArticleFooter key={index} item0={item[0]} item={item} />
+))}
 
-        ))}
+      
         <Milieu/>
         </div>
     )

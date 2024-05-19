@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import UseFetch from "../../utils/useFech";
 import SousCategorieDiv from "./sousCategorieDiv";
 import {ButtonGreen, ButtonOrange} from "../common/buttons";
-
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 const MainNav = () => {
     const jsonUrl = "/json/jsonNav.json";
     const { data: dataNav, error: errorNav } = UseFetch(jsonUrl);
@@ -26,10 +26,10 @@ const MainNav = () => {
         setIsHover(true);
         setSelectedItem(dataNav[category]);
     };
-
+    console.log('selectedItem:', selectedItem); 
     return (
         <>
-        <div className="fixed top-0 w-full items-center justify-center flex z-50 bg-slate-50 h-20  border">
+        <div className="fixed top-0 w-full items-center back_sous_menu justify-center flex z-50  h-20  border">
             <div className="flex w-1/2 space-x-10">
             <div className="svg">logo</div>
             <div>qui somme nous ?</div>
@@ -59,7 +59,7 @@ const MainNav = () => {
         <div className="w-full bg-gray-00 h-full  ">
 
         <div className={`w-full mt-20 z-5 flex h-full fixed left-0 border ${ishover ? "z-50":""} `}>
-            <div className="w-2/12 overflow-y-scroll custom-scrollbar ">
+            <div className="w-2/12 back_navbar overflow-y-scroll custom-scrollbar ">
                 <ul>
                 <li  className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover text-pink-400 font-bold">Nouveau chez mous</li>
                 <li  className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover text-orange-600 font-bold">Promation</li>
@@ -86,13 +86,16 @@ const MainNav = () => {
                     ))}
                 </ul>
             </div>
-            <div className={`w-7/12 h-full ${ishover ? 'bg-pink-300 z-50 ' : 'z-0 hidden'}`} onMouseLeave={() => setIsHover(false)}>
-                <div className="border-b p-5">
+            <div className={`w-7/12 h-full ${ishover ? 'back_sous_menu z-50 ' : 'z-0 hidden'}`} onMouseLeave={() => setIsHover(false)}>
+                <div className="border-b arrow ">
                     <p>Tous les ouvrages</p>
+                    <span className="relative w-10"><KeyboardArrowRightRoundedIcon className=" arrow1 text-orange-600" /> </span>
                 </div>
-            {selectedItem && (
+            {selectedItem  &&  (
     <>
-        {Object.keys(selectedItem).map((div, idx) => (
+        {Object.keys(selectedItem)
+         .filter(key => key !== 'nav')  // Filtrer la clé 'nav'
+         .map((div, idx) => (
             <div key={idx}>
                 <h3 className="text-xl ">{selectedItem[div].titre}</h3>
                 <div className="flex w-full border-b p-5">

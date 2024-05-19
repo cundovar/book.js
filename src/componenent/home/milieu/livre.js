@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/scrollbar'
 import { Scrollbar } from "swiper/modules";
 import { Tilte } from "../../common/title";
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 const Livre=()=>{
 
     const [loading,setLoading]=useState(true)
@@ -96,7 +97,9 @@ useEffect(()=>{
             
             
             <div className="w-full flex justify-end">
-              <ButtonOrange text="Toutes les meilleurs ventes"/>
+              <ButtonOrange text="Toutes les meilleurs ventes"
+               arrow={ <span className="relative w-10"><KeyboardArrowRightRoundedIcon className=" arrow1 text-orange-600" /> </span>} 
+              />
             </div>
         </section>
     )

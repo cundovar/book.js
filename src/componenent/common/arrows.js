@@ -3,5 +3,5 @@ import React from 'react';
 
 export function ArrowRight(){
 
-    <KeyboardArrowRightRoundedIcon/>
+    <KeyboardArrowRightRoundedIcon className="text-cyan-500"/>
 }
