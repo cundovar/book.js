@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRight } from "./arrows";
 
 
 
@@ -6,8 +7,8 @@ import React from "react";
 export  function ButtonOrange({text}){
 return(
     <div className=" ">
-    <button className=" orange  buttonHover p-2 rounded-lg hover:border-orange-600  bg-orange-300  text-orange-600 font-bold flex items-center justify-center">
-    {text}
+    <button className=" space-x-3  orange  buttonHover p-2 rounded-lg hover:border-orange-600  bg-orange-300  text-orange-600 font-bold flex items-center justify-center">
+    {text} <ArrowRight/>
 </button>
 
 

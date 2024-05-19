@@ -29,15 +29,30 @@ const MainNav = () => {
 
     return (
         <>
-        <div className="fixed top-0 w-full items-center justify-center flex z-50 bg-slate-50 h-20 space-x-10 border">
+        <div className="fixed top-0 w-full items-center justify-center flex z-50 bg-slate-50 h-20  border">
+            <div className="flex w-1/2 space-x-10">
             <div className="svg">logo</div>
             <div>qui somme nous ?</div>
-            <div>donner ou revendre des livres</div>
+            <div>
+                <ButtonGreen text="donner ou revendre des livres"/>
+            </div>
+
+
+            </div>
+            <div className="flex w-1/2">
+                <div className="w-2/3">
             <div>barre de recherche</div>
+
+                </div>
+                <div className="w-1/3">
             <div className="flex items-center justify-center space-x-5">
            <div>aide</div>
            <div>connexion</div>
            <div>panier</div>
+
+            </div>
+
+                </div>
             </div>
         </div>
         
@@ -46,13 +61,13 @@ const MainNav = () => {
         <div className={`w-full mt-20 z-5 flex h-full fixed left-0 border ${ishover ? "z-50":""} `}>
             <div className="w-2/12 overflow-y-scroll custom-scrollbar ">
                 <ul>
-                <li  className="border p-3 cursor-pointer hover:border-l-orange-600 text-pink-400 font-bold">Nouvreau chez mous</li>
-                <li  className="border p-3 cursor-pointer hover:border-l-orange-600 text-orange-600 font-bold">Promation</li>
+                <li  className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover text-pink-400 font-bold">Nouveau chez mous</li>
+                <li  className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover text-orange-600 font-bold">Promation</li>
 
                     {categories.map((category, idx) => (
                         <li
                             key={idx}
-                            className="border p-3 cursor-pointer hover:border-l-orange-600"
+                            className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover"
                             onMouseEnter={() => handleMouseEnter(category)}
                         >
                              {dataNav[category].nav}
@@ -65,7 +80,7 @@ const MainNav = () => {
                         <ButtonGreen text="Donner ou revendre"/>
                     </li>
                     {dataLi.map((item)=>(
-                        <li  className="border p-3 cursor-pointer hover:border-l-orange-600">
+                        <li  className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover">
                             {item}
                         </li>
                     ))}

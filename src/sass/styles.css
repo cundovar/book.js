@@ -36,6 +36,22 @@
   border-color: rgb(132, 184, 155);
 }
 
+.liHover {
+  position: relative;
+}
+.liHover::after {
+  content: ""; /* Crée un pseudo-élément vide */
+  position: absolute; /* Permet au pseudo-élément de se superposer au bouton */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0 solid;
+}
+.liHover:hover::after {
+  position: absolute; /* Permet au pseudo-élément de se superposer au bouton */
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 0;
   height: 0;
