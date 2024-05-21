@@ -89,4 +89,16 @@
   margin-left: 0.5rem;
 }
 
+a {
+  color: rgb(117, 116, 117) !important; /* Couleur du texte */
+  text-decoration: underline; /* Souligner les liens */
+  transition: color 0.3s; /* Transition douce pour les changements de couleur */
+}
+
+/* Styles au survol */
+a:hover {
+  color: rgb(66, 64, 64) !important; /* Changer la couleur au survol */
+  text-decoration: none; /* Enlever le soulignement au survol */
+}
+
 /*# sourceMappingURL=styles.css.map */

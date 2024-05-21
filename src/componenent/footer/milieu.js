@@ -1,16 +1,22 @@
 import React from "react";
-
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 
 
 
 const Milieu=()=>{
 
 
+  
+
     const content=[
-        ["clé","En toute sécurité","Vous achetez chez nous en toute sécurité"],
-        ["camion","Pas satisfait ? ","Profitez d'un délai de rétrtactation de 15 jours"],
-        ["boué","Ce n'est pas clair","Naous sommes toujours là pour vous aider"],
-        ["coeur","Un geste solidaire","Collecte de vos livre à domicile"]
+        {icon: <VpnKeyIcon className="text-orange-600 "/> , text:"En toute sécurité", titre:"Vous achetez chez nous en toute sécurité"},
+        {icon: <DirectionsCarIcon className="text-orange-600 "/> , text:"Pas satisfait ?", titre:"Profitez d'un délai de rétrtactation de 15"},
+        {icon: <FavoriteIcon className="text-orange-600 "/> , text:"Ce n'est pas clair", titre:"Nous sommes toujours là pour vous aider"},
+        {icon:<FavoriteIcon className="text-orange-600 "/> , text:"Un geste solidaire", titre:"Collecte de vos livre à domicile"}
     ]
 
 
@@ -23,14 +29,15 @@ const Milieu=()=>{
     
     <div className={`w-1/4 ${index > 0 ? 'border-l border-slate-500' : ''} space-y-5 p-4 cursor-pointer`} key={index}>
                     <div>
-                    {item[0]}
+                    {item.icon}
                     </div>
                     <div>
                         <p>
-{item[1]}
+{item.text}
                         </p>
-                        <h3 className="text-xl text-orange-600">
-                            {item[2]}
+                        <h3 className=" flex arrow text-xl text-orange-600">
+                            {item.titre}
+                        <span className="relative w-10"><KeyboardArrowRightRoundedIcon className="  arrow1 text-orange-600" /> </span>
                         </h3>
 
                     </div>

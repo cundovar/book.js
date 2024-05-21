@@ -15,24 +15,15 @@ const Fin=()=>{
 
     return(
 
-        <div className="flex space-x-5 h-96 footer_back3  z-50 items-start  justify-center">
-        {/* {items.map((item)=>(
-
-           <article className=" border-l w-1/4">
-             <h4 className="text-2xl">{item[0]}</h4>
-             <ul>
-             {item.slice(1).map((element, index) => (
-              <li key={index}>{element}</li>
-            ))}
-             </ul>
-           </article> */}
-
-        {/* ))} */}
+        <div className="h-96 flex footer_back3  z-50 items-end  justify-center">
+ <div className="flex space-x-5 w-full " >
 
         {items.map((item, index) => (
   <ContentArticleFooter key={index} item0={item[0]} item={item} />
 ))}
 
+
+ </div>
 
         </div>
     )

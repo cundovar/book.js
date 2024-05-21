@@ -96,9 +96,9 @@ useEffect(()=>{
 
             
             
-            <div className="w-full flex justify-end">
-              <ButtonOrange text="Toutes les meilleurs ventes"
-               arrow={ <span className="relative w-10"><KeyboardArrowRightRoundedIcon className=" arrow1 text-orange-600" /> </span>} 
+            <div className="w-full flex justify-end mt-2 mb-11">
+              <ButtonOrange text="Toutes les meilleurs ventes "
+               arrow={ <span className="relative w-10"><KeyboardArrowRightRoundedIcon className="  arrow1 text-orange-600" /> </span>} 
               />
             </div>
         </section>

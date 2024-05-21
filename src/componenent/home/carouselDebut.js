@@ -38,26 +38,27 @@ const Carousel1=()=>{
 
 
 const dataCarousel=[
-    ["10 livres à partire de 10€" ,"je fonce !","bg-pink-300"],
-    ["Votre selection lecture" ,"je lis !","bg-pink-400"],
-    ["Rejoingner les cercle littéraire","je m'incris","bg-pink-500"]
+    ["10 livres à partire de 10€" ,"je fonce !","b1.jpg"],
+    ["Votre selection lecture" ,"je lis !","b2.jpg"],
+    ["Rejoingner les cercle littéraire","je m'incris","b3.jpg"]
 ]      
 const CarouselContent=({titre,button,bg})=>{
 
     return(
         <>
        
-        <div className={`flex tt w-full m-auto h-96 ${bg}`} >
-            <div className="w-4/6 border gg flex justify-center items-center">
+        <div className={`flex tt w-full m-auto h-96 relative `} >
+            <div className="w-4/6 z-20  gg flex justify-center items-center">
             <h1 className="text-6xl">
                 {titre}
             </h1>
             </div>
-            <div className="border w-2/6 font-bold  flex justify-center items-center">
+            <div className=" z-20 w-2/6 font-bold  flex justify-center items-center">
          <button className="p-1 text-gray-200 w-40 bg-orange-600 rounded-xl ">
             {button}
          </button>
             </div>
+            <img src={`/images/carousel1/${bg}`} alt={titre} className=" z-10 absolute w-full h-full object-cover"/>
         </div>
 
 

@@ -4,7 +4,7 @@ const Cardlivre = ({ key, titre, autor, image }) => {
   return (
     <article
       key={key}
-      className=" w-[250px]  m-5 h-96 cardLivre rounded-xl p-5"
+      className=" w-[250px]  m-5 h-96 cardLivre  rounded-xl p-2"
     >
       <div className="h-3/4 m-auto ">
    
@@ -21,8 +21,8 @@ const Cardlivre = ({ key, titre, autor, image }) => {
 
       <div className="w-full h-1/4 ">
         <div className="h-3/4  flex flex-col justify-center items-center w-full ">
-          <h3>{titre}</h3>
-          <h4 className="  text-slate-600 ">{autor} </h4>
+          <h5>{titre}</h5>
+          <h6 className="  text-slate-600 ">{autor} </h6>
         </div>
 
         <div className="h-1/4 ">

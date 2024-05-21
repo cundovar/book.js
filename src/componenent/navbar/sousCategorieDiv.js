@@ -16,14 +16,15 @@ const SousCategorieDiv = ({ selectedItem, div, ul }) => {
                 </a>
               </li>
             )
+            
           )}
-        </ul>
-      )}
       {selectedItem[div][ul] && selectedItem[div][ul].length > 3 && (
-        <a href="#" className="text-orange-500 ">
+        <a href="#">
           {" "}
-          <p>plus info</p>{" "}
+          <li  className="text-orange-500 ">plus info</li>
         </a>
+      )}
+        </ul>
       )}
     </div>
   );
