@@ -25,7 +25,9 @@ const SousCategorieDiv = ({ selectedItem, div, ul }) => {
         </a>
       )}
         </ul>
-      )}
+
+)}
+
     </div>
   );
 };

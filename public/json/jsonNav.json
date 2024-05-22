@@ -17,7 +17,23 @@
        
         
 
+    },
+    "divImg":{
+        "img":"/images/carousel1/b1.jpg"
+    },
+    "div4":{
+        "titre":["Fantasy et terreur"],
+        "ul0":["Fantastique et Terreur","Fantasy","Fiml et serie TV"],
+        "ul1":["Grands courants","Cycles","Jeus de rôles"],
+        "ul2":["Ouvrages de Référece"]
+    },
+    "div5":{
+        "titre":["Humour"],
+        "ul0":["Satire","Humour polisson"],
+        "ul1":["Blagues","Dessins de presse"],
+        "ul2":["Humoristes"]
     }
+   
 
         
     
@@ -42,9 +58,16 @@
         
 
     },
-    "div3":{
+    "divImg":{
         "img":"/images/carousel1/b1.jpg"
+    },
+    "div4":{
+        "titre":[""],
+        "ul0":[""],
+        "ul1":[""],
+        "ul2":[""]
     }
+
 
 
 },

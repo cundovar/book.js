@@ -4,7 +4,7 @@ const Cardlivre = ({ key, titre, autor, image }) => {
   return (
     <article
       key={key}
-      className=" w-[250px]  m-5 h-96 cardLivre  rounded-xl p-2"
+      className=" w-[250px]  m-5 h-96 cardLivre  rounded-xl p-"
     >
       <div className="h-3/4 m-auto ">
    

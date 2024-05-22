@@ -7,12 +7,12 @@ const ContentArticleFooter=({item0,item})=>{
 
     return(
 
-        <article className="w-1/4 ">
+        <article className="w-1/4 flex items-center  flex-col">
        
         <h4 className="text-xl text-orange-600 font-bold">{item0}</h4>
         <ul className="w-full p-0 m-0 ">
         {item.slice(1).map((element, index) => (
-         <li className="cursor-pointer" key={index}>{element}</li>
+         <li className="cursor-pointer text-center" key={index}>{element}</li>
        ))}
         </ul>
 

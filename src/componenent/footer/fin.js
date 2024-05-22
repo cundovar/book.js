@@ -16,7 +16,7 @@ const Fin=()=>{
     return(
 
         <div className="h-96 flex footer_back3  z-50 items-end  justify-center">
- <div className="flex space-x-5 w-full " >
+ <div className="flex space-x-5 w-full p-3  " >
 
         {items.map((item, index) => (
   <ContentArticleFooter key={index} item0={item[0]} item={item} />
