@@ -4,6 +4,9 @@ import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
+import { Article } from "@mui/icons-material";
+import ResponsiveFin from "./responsive/reponsiveFin";
+import ResponsiveMilieu from "./responsive/reponsiveMilieu";
 
 const Milieu = () => {
   const content = [
@@ -50,7 +53,9 @@ const Milieu = () => {
   ];
 
   return (
-    <article className=" absolute bottom-0 right-0  transform translate-y-1/2 h-20 z-40 w-full flex items-center justify-center ">
+    <>
+     {/* Desktop version */}
+    <article className=" max-lg:hidden absolute bottom-0 right-0  transform translate-y-1/2 h-20 z-40 w-full  items-center justify-center ">
       <div className="w-11/12 footer_back2 p-5 flex">
         {content.map((item, index) => (
           <div
@@ -73,6 +78,15 @@ const Milieu = () => {
         ))}
       </div>
     </article>
+
+    
+     {/* Mobile version */}
+     <div className="block lg:hidden w-full">
+        {content.map((item, index) => (
+          <ResponsiveMilieu key={index} icon={item.icon} titre={item.titre} />
+        ))}
+      </div>
+    </>
   );
 };
 

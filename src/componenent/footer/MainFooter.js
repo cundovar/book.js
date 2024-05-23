@@ -3,6 +3,7 @@ import Debut from "./debut";
 import Fin from "./fin";
 import Milieu from "./milieu";
 import ToutAuBout from "./touaubout";
+import ResponsiveFin from "./responsive/reponsiveFin";
 
 
 
@@ -16,6 +17,7 @@ const MainFooter=()=>{
            <Debut/>
      
            <Fin/>
+           
            <ToutAuBout/>
         </footer>
     )
