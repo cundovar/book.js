@@ -13,7 +13,7 @@
 
         "titre":"Romams policiers et polars",
         "ul0":["Romans policiers","Thriller"],
-        "ul1":["Romans noirs","Polars historiques"]
+        "ul1":["Romans noirs","Romans noirs"]
        
         
 
@@ -23,8 +23,8 @@
     },
     "div4":{
         "titre":["Fantasy et terreur"],
-        "ul0":["Fantastique et Terreur","Fantasy","Fiml et serie TV"],
-        "ul1":["Grands courants","Cycles","Jeus de rôles"],
+        "ul0":["Fantastique et Terreur","Fantasy","Film et serie TV"],
+        "ul1":["Grands courants","Cycles","Jeux de rôles"],
         "ul2":["Ouvrages de Référece"]
     },
     "div5":{
@@ -53,7 +53,7 @@
     "div2":{
 
         "titre":"Adolescents",
-        "ul0":["Romans","Sport,art,crétaion",""],
+        "ul0":["Romans","Sport,art,crétaion"],
         "ul1":["Savoir et découvertes","Comptes et légendes"]
         
 

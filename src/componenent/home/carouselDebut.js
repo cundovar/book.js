@@ -32,8 +32,8 @@ const Carousel1=()=>{
         autoplay: true,
         autoplaySpeed: 4000,
         speed: 3000,
-        nextArrow:<SampleNextArrow/>,
-        prevArrow:<SamplePrevtArrow/>
+        // nextArrow:<SampleNextArrow/>,
+        // prevArrow:<SamplePrevtArrow/>
       };
 
 
@@ -47,13 +47,13 @@ const CarouselContent=({titre,button,bg})=>{
     return(
         <>
        
-        <div className={`flex tt w-full m-auto h-96 relative `} >
-            <div className="w-4/6 z-20  gg flex justify-center items-center">
-            <h1 className="text-6xl">
+        <div className={`flex tt max-xl:flex-col max:xl:justify-center max-xl:items-center w-full m-auto h-96 relative `} >
+            <div className="w-4/6 z-20 max-xl:w-full  max-xl:h-5/6  gg flex justify-center items-center max-xl:p-5">
+            <h1 className="text-6xl max-xl:text-4xl  bg-orange-600">
                 {titre}
             </h1>
             </div>
-            <div className=" z-20 w-2/6 font-bold  flex justify-center items-center">
+            <div className="  max-xl:w-full z-20 w-2/6 font-bold  flex justify-center items-center">
          <button className="p-1 text-gray-200 w-40 bg-orange-600 rounded-xl ">
             {button}
          </button>

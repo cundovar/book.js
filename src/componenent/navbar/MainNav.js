@@ -7,6 +7,7 @@ import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRigh
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Header from "./header";
+import ResponsiveMenu from "./reponsive/reponsiveMenu";
 const MainNav = () => {
   const jsonUrl = "/json/jsonNav.json";
   const { data: dataNav, error: errorNav } = UseFetch(jsonUrl);
@@ -21,25 +22,32 @@ const MainNav = () => {
   }
   const categories = dataNav ? Object.keys(dataNav) : [];
   const dataLi = ["Aide", "recyclage Pro", "Nos engagements", "Le blog"];
+  const [menuVisible, setMenuVisible] = useState(false);
 
   const handleMouseEnter = (category) => {
     setIsHover(true);
     setSelectedItem(dataNav[category]);
   };
   console.log("selectedItem:", selectedItem);
-
+  const handleToggleClick = () => {
+    setMenuVisible(!menuVisible);
+  };
   return (
     <>
-     <Header/>
+     <Header handleToggleClick={handleToggleClick} menuVisible={menuVisible}  />
 
      
       <div className="w-full  bg-gray-00 h-full  ">
+
+        <ResponsiveMenu menuVisible={menuVisible}/>
         <div
           className={`w-full mt-20 z-5 flex h-full fixed left-0 border ${
             ishover ? "z-50" : ""
           } `}
         >
-          <div className="w-2/12 back_navbar overflow-y-scroll custom-scrollbar ">
+
+
+          <div className="w-2/12 max-xl:hidden back_navbar overflow-y-scroll custom-scrollbar ">
             <ul>
               <li className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover text-pink-400 font-bold">
                 Nouveau chez mous
@@ -71,7 +79,7 @@ const MainNav = () => {
             </ul>
           </div>
           <div
-            className={`w-5/12 overflow-y-auto h-full ${
+            className={`w-5/12 max-lg:hidden overflow-y-auto h-full ${
               ishover ? "back_sous_menu z-50 " : "z-0 hidden"
             }`}
              onMouseLeave={() => setIsHover(false)}
@@ -128,7 +136,7 @@ const MainNav = () => {
             )}
           </div>
           <div
-            className={`w-3/12 h-full bg-black opacity-40  ${
+            className={`w-3/12 h-full max-lg:hidden bg-black opacity-40  ${
               ishover ? "" : "z-0 hidden"
             }`}
           ></div>

@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Tilte } from "../../common/title";
 
 const Actualites = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  const updateSlidesToShow = () => {
+    if (window.innerWidth <= 1280) { // Adjust the max-xl breakpoint here
+      setSlidesToShow(1);
+    } else {
+      setSlidesToShow(3);
+    }
+  };
+
+  useEffect(() => {
+    updateSlidesToShow(); // Set initial value
+    window.addEventListener('resize', updateSlidesToShow);
+    return () => window.removeEventListener('resize', updateSlidesToShow);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToShow:slidesToShow ,
+    slidesToScroll:2 ,
     autoplay: false,
     speed: 3000,
   };

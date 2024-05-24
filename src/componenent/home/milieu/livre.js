@@ -67,11 +67,31 @@ useEffect(()=>{
         
         }}
         modules={[Scrollbar]}
+        breakpoints={{
+
+            // Lorsque la largeur de la fenêtre est <= 1280px (max-xl)
+
+            1:{
+                slidesPerView: 1,
+
+            },
+            779:{
+                slidesPerView: 2,
+
+            },
+            780: {
+              slidesPerView: 3,
+            },
+            // Lorsque la largeur de la fenêtre est > 1280px
+            1281: {
+              slidesPerView: 5,
+            },
+          }}
         className=""
-        slidesPerView={5}
+   
       >
 {books.map((book,indexx)=>(
-     <SwiperSlide>
+     <SwiperSlide >
 
 
          <Cardlivre key={indexx}
@@ -96,7 +116,7 @@ useEffect(()=>{
 
             
             
-            <div className="w-full flex justify-end mt-2 mb-11">
+            <div className="w-full max-md:justify-center flex justify-end mt-2 mb-11">
               <ButtonOrange text="Toutes les meilleurs ventes "
                arrow={ <span className="relative w-10"><KeyboardArrowRightRoundedIcon className="  arrow1 text-orange-600" /> </span>} 
               />

@@ -17,22 +17,26 @@ const Debut=()=>{
 
     return(
 
-        <div className="flex max-xl:flex-col  xl:h-96 space-x-5 max-xl:w-full footer_back1 items-start relative justify-center">
+        <div className="flex max-xl:flex-col   xl:h-96 xl:space-x-5 max-xl:w-full footer_back1 items-start relative  justify-center">
        
-<div className="w-full flex max-lg:hidden max-lg:absolute">
+<div className="w-full flex max-xl:hidden    max-lg:absolute">
 {item.map((item, index) => (
   <ContentArticleFooter key={index} item0={item[0]} item={item} />
 ))}
 
+    <Milieu/>
 </div>
-<div className="lg:hidden w-full">
+<div className="xl:hidden w-full">
 {item.map((item, index) => (
     <ResponsiveFin item0={item[0]} item={item} index={index} key={index}/>
 ))}
 </div>
-      
-        <Milieu/>
-        </div>
+<div className="w-full xl:hidden">
+
+<Milieu/>
+</div>
+</div>
+       
     )
 }
 

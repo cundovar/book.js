@@ -21,7 +21,7 @@ const Cardlivre = ({ key, titre, autor, image }) => {
 
       <div className="w-full h-1/4 ">
         <div className="h-3/4  flex flex-col justify-center items-center w-full ">
-          <h5>{titre}</h5>
+          <h5 className="text-center">{titre}</h5>
           <h6 className="  text-slate-600 ">{autor} </h6>
         </div>
 

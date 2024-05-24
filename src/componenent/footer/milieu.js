@@ -28,7 +28,7 @@ const Milieu = () => {
         />
       ),
       text: "Pas satisfait ?",
-      titre: "Profitez d'un délai de rétrtactation de 15",
+      titre: "Profitez d'un délai de rétrtactation de 15 jours",
     },
     {
       icon: (
@@ -55,7 +55,7 @@ const Milieu = () => {
   return (
     <>
      {/* Desktop version */}
-    <article className=" max-lg:hidden absolute bottom-0 right-0  transform translate-y-1/2 h-20 z-40 w-full  items-center justify-center ">
+    <article  className="max-xl:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 h-20 z-40 w-full flex items-center justify-center ">
       <div className="w-11/12 footer_back2 p-5 flex">
         {content.map((item, index) => (
           <div
@@ -81,7 +81,7 @@ const Milieu = () => {
 
     
      {/* Mobile version */}
-     <div className="block lg:hidden w-full">
+     <div className="block xl:hidden border m-auto w-full">
         {content.map((item, index) => (
           <ResponsiveMilieu key={index} icon={item.icon} titre={item.titre} />
         ))}

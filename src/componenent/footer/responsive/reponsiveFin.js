@@ -38,10 +38,10 @@ const ResponsiveFin = ({ item0,item,index }) => {
           aria-labelledby={headingId}
           data-bs-parent="#accordionFlushExample"
         >
-          <div className="accordion-body text-white bg-black">
+          <div className="accordion-body">
             <ul className="w-full p-0 m-0 list-none">
               {item.slice(1).map((element, index) => (
-                <li key={index} className="cursor-pointer tesd text-center text-orange-300">
+                <li key={index} className="cursor-pointer tesd text-start">
                   {element}
                 </li>
               ))}
