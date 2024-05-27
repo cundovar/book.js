@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 
 const ResponsiveMenu=({menuVisible})=>{
@@ -19,7 +19,7 @@ const menu={
     Romans:[  
         {name:"retour",submenu:"main"},
         {name:"Littérature",submenu:"Litterature"},
-        {name:"romans policiers et polars",submenu:"romansPoliciers "},
+        {name:"romans policiers et polars",submenu:"romansPoliciers"},
         {name:"Fantasy et terreur",submenu:"Fantazy"},
         {name:"Humour",submenu:"Humour"},
         
@@ -77,7 +77,7 @@ const menu={
         {name:"Romans policiers",submenu:null},
         {name:"Thriller",submenu:null},
         {name:"Romans noirs",submenu:null},
-        {name:"Romans noirs",submenu:null},
+       
     ],
     
     Fantazy:[
@@ -141,8 +141,21 @@ const handleMenuClick = (submenu) => {
   };
   const renderMenuItems = (items) => {
     return items.map((item, index) => (
-      <li key={index} className="p-2 cursor-pointer hover:bg-gray-200" onClick={() => handleMenuClick(item.submenu)}>
+      <li key={index} className="p-2 border cursor-pointer flex hover:bg-gray-200" onClick={() => handleMenuClick(item.submenu)}>
+        <div className="w-11/12">
         {item.name}
+
+        </div>
+      <div className="flex w-1/12 justify-end">
+        {item.name ==="retour" ? (
+            <KeyboardArrowLeftIcon className="text-orange-500"/>
+        ):(
+
+            <KeyboardArrowRightIcon/>
+        )
+        }
+
+      </div>
       </li>
     ));
   };

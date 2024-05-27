@@ -47,7 +47,7 @@ const MainNav = () => {
         >
 
 
-          <div className="w-2/12 max-xl:hidden back_navbar overflow-y-scroll custom-scrollbar ">
+          <div className="w-2/12 z-50 max-xl:hidden back_navbar overflow-y-scroll custom-scrollbar ">
             <ul>
               <li className="border p-3 cursor-pointer hover:border-l-orange-600 hover:border-l-4 liHover text-pink-400 font-bold">
                 Nouveau chez mous
@@ -136,7 +136,7 @@ const MainNav = () => {
             )}
           </div>
           <div
-            className={`w-3/12 h-full max-lg:hidden bg-black opacity-40  ${
+            className={`w-full absolute z-40 h-full max-lg:hidden bg-black opacity-40  ${
               ishover ? "" : "z-0 hidden"
             }`}
           ></div>

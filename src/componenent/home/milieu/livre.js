@@ -40,11 +40,11 @@ useEffect(()=>{
 
     return(
 
-        <section>
+        <section className="">
         <Tilte text="Nos meilleurs ventes"/>
 
             {loading ? (
-                <div className="w-full h-96 flex items-center justify-center">
+                <div className="w-full h-96   flex items-center justify-center">
 
                 <div role="status">
     <svg aria-hidden="true" class="w-8 h-8  text-gray-200 animate-spin dark:text-gray-600 fill-orange-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@ useEffect(()=>{
                 slidesPerView: 1,
 
             },
-            779:{
+            767:{
                 slidesPerView: 2,
 
             },
@@ -116,7 +116,7 @@ useEffect(()=>{
 
             
             
-            <div className="w-full max-md:justify-center flex justify-end mt-2 mb-11">
+            <div className="w-full max-lg:justify-center flex justify-end mt-2 mb-11">
               <ButtonOrange text="Toutes les meilleurs ventes "
                arrow={ <span className="relative w-10"><KeyboardArrowRightRoundedIcon className="  arrow1 text-orange-600" /> </span>} 
               />
